@@ -1,0 +1,261 @@
+/* General Body and HTML */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f0f2f5; /* Light grey background for overall page */
+    color: #333;
+}
+
+/* Header/Navigation */
+nav {
+    background-color: #2B0080; /* Dark Royal Blue from logo */
+    padding: 15px 0;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFF00; /* Bright Yellow */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed for the logo */
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFFF00; /* Yellow on hover */
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h1 {
+    color: #2B0080; /* Dark Royal Blue */
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+
+/* Home Section - Product Grid Adaptation */
+.home-content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.content-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    color: #2B0080; /* Dark Royal Blue */
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.product-grid, .feature-grid { /* Renamed from feature-grid to product-grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card { /* Renamed from feature-card to product-card */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card h3 {
+    color: #2B0080;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.product-card p {
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.price { /* For product pricing */
+    display: block;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #FF0000; /* A standard red for prices, or yellow if preferred */
+    margin-top: 15px;
+}
+
+/* About Section */
+.about-box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 40px;
+    text-align: left;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #2B0080; /* Dark Royal Blue */
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    gap: 30px;
+}
+
+.footer-info, .footer-brands {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-info h3, .footer-brands h3 {
+    color: #FFFF00; /* Yellow for headings */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.footer-info p {
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #FFFF00;
+}
+
+.brand-logos img {
+    height: 50px; /* Adjust size */
+    margin: 0 15px;
+    filter: grayscale(100%) brightness(200%); /* To make them fit the theme, or find yellow versions */
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    font-size: 0.9em;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.search-box input[type="text"] {
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 60%;
+    max-width: 500px;
+    font-size: 1.1em;
+    outline: none;
+}
+
+.search-box input[type="button"] {
+    background-color: #FFFF00; /* Yellow search button */
+    color: #2B0080; /* Dark blue text */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.search-box input[type="button"]:hover {
+    background-color: #FFD700; /* Slightly darker yellow on hover */
+}
+
+/* Auth Section */
+#authForm {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+#authForm input[type="text"],
+#authForm input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#authForm input[type="submit"] {
+    background-color: #2B0080; /* Dark Royal Blue */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+#authForm input[type="submit"]:hover {
+    background-color: #1a004d; /* Darker blue on hover */
+}
+
+#toggleLink {
+    color: #2B0080 !important; /* Override with blue */
+}
